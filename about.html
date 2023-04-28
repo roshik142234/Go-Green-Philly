@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Go Green Philly</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/about-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <!--Logo-->
+            <a href="index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img"></div>
+            </a>
+
+            <!--Makes title a href to homepage-->
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Go Green Philly</h1></a>
+            </div>
+
+            <!--Gives a buttoto only small devices such as phones a button to expand the navigation menu-->
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapsable-nav"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!--What the navbar will look like-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li class="list-inline-item">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span
+                  ><br class="hidden-xs" />
+                  Home</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="recycling.html">
+                  <span class="glyphicon glyphicon-refresh"></span
+                  ><br class="hidden-xs" />
+                  Recyclables</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="ideas.html">
+                  <span class="glyphicon glyphicon-comment"></span
+                  ><br class="hidden-xs" />
+                  Ideas</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="locations.html">
+                  <span class="glyphicon glyphicon-map-marker"></span
+                  ><br class="hidden-xs" />
+                  Locations</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="about.html">
+                  <span class="glyphicon glyphicon-info-sign"></span
+                  ><br class="hidden-xs" />
+                  Why Recycle</a
+                >
+              </li>
+            </ul>
+            <!-- #nav-list -->
+          </div>
+          <!-- .collapse .navbar-collapse -->
+        </div>
+        <!-- .container -->
+      </nav>
+      <!-- #header-nav -->
+    </header>
+
+    <main>
+      <!--Inspirational Video on why you should recycle-->
+      <video autoplay playsinline controls loop id="myVideo">
+        <source src="images/about-vid.mp4" type="video/mp4" />
+      </video>
+
+      <!--Embedded statistics pulled from OurWorldInData-->
+      <div id="statistics" class="container">
+        <h2>Some Statistics</h2>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <iframe
+            src="https://ourworldindata.org/grapher/global-plastics-production?time=earliest..latest"
+            loading="lazy"
+            style="width: 100%; height: 600px; border: 0px none"
+          ></iframe>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <iframe
+            src="https://ourworldindata.org/grapher/surface-plastic-mass-by-ocean"
+            loading="lazy"
+            style="width: 100%; height: 600px; border: 0px none"
+          ></iframe>
+        </div>
+        <p>
+          The production of plastic has increased dramatically over the past few
+          decades due to its versatility, durability, and low cost of
+          production. However, plastic is also a major contributor to
+          environmental pollution, particularly in oceans. Plastic is not
+          biodegradable and can persist in the environment for hundreds of
+          years. When plastic waste is not properly disposed of or managed, it
+          can end up in rivers and oceans. The plastic waste can be carried by
+          the currents and accumulate in large masses, known as "garbage
+          patches." Marine animals can mistake plastic for food or become
+          entangled in it, leading to injury and death. As these animals are an
+          important part of the marine food chain, the plastic pollution can
+          also have ripple effects on entire ecosystems. The increase in plastic
+          production and the amount of plastic found in oceans are
+          interconnected issues. As more plastic is produced, there is a greater
+          likelihood that it will end up in the oceans if proper waste
+          management practices are not in place.
+        </p>
+      </div>
+
+      <!--Information on how plastic is made-->
+      <div id="how-plastic" class="container">
+        <h2>How Is Plastic Made?</h2>
+        <p>
+          Plastic is made from organic polymers, which are created through a
+          process called polymerization. This process involves combining smaller
+          molecules called monomers, typically through a chemical reaction, to
+          form larger molecules called polymers. There are a wide variety of
+          polymers used in the production of plastic, including polyethylene,
+          polypropylene, polystyrene, and PVC. Once the polymerization process
+          is complete, other materials are added to the polymer in a process
+          called compounding. These materials can include pigments to add color,
+          stabilizers to protect against UV radiation, and plasticizers to
+          improve flexibility and workability. The specific additives used
+          depend on the desired properties of the final product. The polymer is
+          then processed and shaped into the desired form, which can include
+          extrusion, injection molding, blow molding, and other techniques. In
+          extrusion, the polymer is melted and forced through a die to create a
+          continuous shape, such as a pipe or sheet. Injection molding involves
+          melting the polymer and injecting it into a mold to create a specific
+          shape, such as a bottle cap or toy. Blow molding uses air pressure to
+          shape the polymer into a hollow object, such as a plastic bottle.
+          Overall, the production of plastic involves a complex series of
+          processes that vary depending on the specific type of plastic being
+          made and the desired properties of the final product.
+        </p>
+      </div>
+
+      <!--Information on how recycling works-->
+      <div id="howitworks" class="container">
+        <h2>How Does Recycling Work?</h2>
+        <p>
+          Recycling is an important process that helps to reduce the amount of
+          waste that goes into landfills and conserve natural resources. The
+          process of recycling starts with the collection of waste materials,
+          which can be done through curbside pick-up, drop-off centers, or
+          recycling bins located in public places. Once the waste materials have
+          been collected, they are sorted by type. This is typically done by
+          hand or using specialized machinery, such as conveyor belts, magnets,
+          and optical scanners. The sorted materials are then cleaned and
+          processed to remove any contaminants, such as food residue or labels.
+          After cleaning and processing, the materials are transformed into new
+          products through a variety of techniques, such as melting, shredding,
+          and molding. For example, plastic bottles can be melted down and
+          turned into new plastic products, such as furniture or toys. Paper can
+          be shredded and pulped to make new paper products, such as newspapers
+          or cardboard boxes. The final step in the recycling process is the
+          sale and distribution of the new products. These products can be sold
+          to manufacturers, retailers, or consumers, depending on the type of
+          product and the market demand.
+        </p>
+      </div>
+
+      <!--Things you can do to help prevent waste-->
+      <div id="ultimatesolution" class="container">
+        <h2>The Solution To Waste</h2>
+        <p>
+          Plastic pollution is a major environmental issue that requires a
+          comprehensive solution. The problem of plastic pollution has been
+          increasing over the years as plastic has become an integral part of
+          our daily lives. The production of plastic has increased tremendously,
+          leading to a massive amount of plastic waste that ends up in
+          landfills, rivers, and oceans. This waste poses a significant threat
+          to marine life, birds, and other animals that can become entangled in
+          plastic or mistake it for food.
+        </p>
+      </div>
+
+      <!--A interactive way to show a lot of information-->
+      <div id="accordion" class="container accordion accordion-flush">
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Reduce Single-Use Plastics
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              One solution to plastic pollution is reducing the use of
+              single-use plastics. These are items like plastic bags, straws,
+              and utensils that are used only once before being discarded.
+              Governments and businesses around the world have started
+              implementing regulations to reduce the use of these items, such as
+              banning single-use plastics or implementing fees for their use.
+              Consumers can also play a role by choosing to use reusable
+              alternatives like cloth bags and metal straws.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Improving Waste Management Practices
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              Another solution to plastic pollution is improving waste
+              management practices. Properly disposing of plastic waste and
+              reducing the amount of plastic that ends up in landfills, rivers,
+              and oceans is crucial to mitigating plastic pollution. Governments
+              and businesses can invest in recycling programs, infrastructure
+              for waste collection and disposal, and education campaigns to
+              promote proper waste disposal.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                More Sustainable and Biodegradable Alternatives
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              In addition to reducing the use of single-use plastics and
+              improving waste management practices, another solution to plastic
+              pollution is developing more sustainable and biodegradable
+              alternatives to traditional plastics. Researchers are working on
+              developing new materials made from renewable resources like plants
+              that can replace traditional plastics. Companies are also
+              experimenting with creating biodegradable plastics that can break
+              down naturally and reduce the amount of plastic waste in the
+              environment.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Cleaning Up Existing Plastic Waste and Educating/Empowering
+                Others
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFive"
+            class="collapse"
+            aria-labelledby="headingFive"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              Another solution to plastic pollution is cleaning up existing
+              plastic waste in the environment. There are various organizations
+              and programs that focus on removing plastic waste from the ocean,
+              beaches, and other areas where it accumulates. This can involve
+              using boats and nets to collect plastic waste or organizing beach
+              cleanups with volunteers. Education and awareness campaigns are
+              also important solutions to plastic pollution. By educating people
+              about the impact of plastic waste on the environment and providing
+              information on how to reduce plastic use and properly dispose of
+              plastic waste, individuals can make a difference in reducing
+              plastic pollution. International cooperation is also necessary to
+              solve the problem of plastic pollution. Governments and
+              organizations around the world need to work together to develop
+              and implement effective solutions to plastic pollution. This can
+              involve sharing best practices, investing in research and
+              development, and promoting policies and regulations to reduce
+              plastic waste. Finally, individual actions can also make a
+              difference in reducing plastic pollution. By reducing our own use
+              of plastic, properly disposing of plastic waste, and supporting
+              businesses that prioritize sustainability and reducing plastic
+              waste, we can all contribute to the solution to plastic pollution.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <!--Logo and title on the right-->
+          <section id="logo" class="col-sm-4">
+            <img src="images/recycling_logo_150x150.png" alt="Logo" /><br />
+            <h2>Go Green Philly</h2>
+            <hr class="visible-xs" />
+          </section>
+          <!--Gives the links to each page one under the other-->
+          <section id="site-map" class="col-sm-4">
+            <span>Site Map:</span><br />
+            <a href="index.html">Home</a><br />
+            <a href="recycling.html">Recyclables</a><br />
+            <a href="ideas.html">Ideas</a><br />
+            <a href="locations.html">Locations</a><br />
+            <a href="about.html">Why Recycle</a><br />
+            <hr class="visible-xs" />
+          </section>
+          <!--My email and source code on Github-->
+          <section id="contact" class="col-sm-4">
+            <span>Contact Information:</span><br />
+            <a href="https://github.com/roshik142234/Go-Green-Philly"
+              >Source Code</a
+            ><br />
+            <a href="mailto:roshik.patibandla@gmail.com">Email</a>
+          </section>
+        </div>
+        <!--Credit-->
+        <h2 id="credit">
+          <a
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='["Designed By: RoshikNagaSai", "Designed By: RoshikNagaSai Patibandla" ]'
+          >
+            <span class="wrap"></span>
+          </a>
+        </h2>
+      </div>
+    </footer>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/typewriter.js"></script>
+  </body>
+</html>

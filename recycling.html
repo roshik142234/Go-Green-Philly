@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Go Green Philly</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/recycling.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <!--Logo-->
+            <a href="index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img"></div>
+            </a>
+
+            <!--Makes title a href to homepage-->
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Go Green Philly</h1></a>
+            </div>
+
+            <!--Gives a buttoto only small devices such as phones a button to expand the navigation menu-->
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapsable-nav"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!--What the navbar will look like-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li class="list-inline-item">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span
+                  ><br class="hidden-xs" />
+                  Home</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="recycling.html">
+                  <span class="glyphicon glyphicon-refresh"></span
+                  ><br class="hidden-xs" />
+                  Recyclables</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="ideas.html">
+                  <span class="glyphicon glyphicon-comment"></span
+                  ><br class="hidden-xs" />
+                  Ideas</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="locations.html">
+                  <span class="glyphicon glyphicon-map-marker"></span
+                  ><br class="hidden-xs" />
+                  Locations</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="about.html">
+                  <span class="glyphicon glyphicon-info-sign"></span
+                  ><br class="hidden-xs" />
+                  Why Recycle</a
+                >
+              </li>
+            </ul>
+            <!-- #nav-list -->
+          </div>
+          <!-- .collapse .navbar-collapse -->
+        </div>
+        <!-- .container -->
+      </nav>
+      <!-- #header-nav -->
+    </header>
+
+    <!--The search bar for the catalog-->
+    <section class="container cont">
+      <form>
+        <i class="glyphicon glyphicon-search"></i>
+        <input
+          type="text"
+          id="search-item"
+          placeholder="Search"
+          onkeyup="search()"
+        />
+      </form>
+
+      <!--List of all searchable items with thumbnail-->
+      <div class="rec-list" id="list">
+        <div class="item">
+          <img src="images/paper.jpg" alt="Paper" />
+          <div class="p-details">
+            <h2><a href="#papercat">Paper</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/newspaper.jpg" alt="Newspaper" />
+          <div class="p-details">
+            <h2><a href="#newspaper">Newspaper</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/mail.webp" alt="Mail" />
+          <div class="p-details">
+            <h2><a href="#mailcat">Paper Mail</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/phone_book.jpg" alt="Phone Book" />
+          <div class="p-details">
+            <h2><a href="#phonecat">Phone Book</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/brochure.jpg" alt="Brochure" />
+          <div class="p-details">
+            <h2><a href="#brochurecat">Brochure</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/magazines.jpg" alt="Magazines" />
+          <div class="p-details">
+            <h2><a href="#magazinecat">Magazines</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/ream_paper.webp" alt="Ream Paper" />
+          <div class="p-details">
+            <h2><a href="#reamcat">Ream Paper</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/file_folders.jpg" alt="File Folders" />
+          <div class="p-details">
+            <h2><a href="#filefoldercat">File Folders</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/poster_board.webp" alt="Poster Board" />
+          <div class="p-details">
+            <h2><a href="#posterboardcat">Poster Board</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/cardboard.jpg" alt="Cardboard" />
+          <div class="p-details">
+            <h2><a href="#cardboardcat">Cardboard</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/milk_carton.jpg" alt="Milk Carton" />
+          <div class="p-details">
+            <h2><a href="#milkcartoncat">Milk Carton</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/milk_jug.webp" alt="Milk Jug" />
+          <div class="p-details">
+            <h2><a href="#milkjugcat">Milk Jug</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/plastic_bottles.png" alt="Plastic Bottles" />
+          <div class="p-details">
+            <h2><a href="#plasticbottlecat">Plastic Bottles</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/soda_bottles.webp" alt="Soda Bottles" />
+          <div class="p-details">
+            <h2><a href="#sodabottles">Soda Bottles</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/shampoo_bottle.jpeg" alt="Shampoo Bottle" />
+          <div class="p-details">
+            <h2><a href="#shampoocat">Shampoo Bottles</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/soap_bottles.jpg" alt="Soap Bottle" />
+          <div class="p-details">
+            <h2><a href="#soapdiscat">Plastic Soap Dispensers</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/detergent_bottles.jpg" alt="Detergent Bottle" />
+          <div class="p-details">
+            <h2><a href="#detergentcat">Plastic Detergent Containers</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/aluminum_cans.jpg" alt="Aluminum Beverage Cans" />
+          <div class="p-details">
+            <h2><a href="#aluminumcancat">Aluminum Beverage Cans</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/aluminum_can.jpg" alt="Aluminum Cans" />
+          <div class="p-details">
+            <h2><a href="#aluminumfoodcancat">Aluminum Canned Food</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/scrap_metal.jpg" alt="Metal" />
+          <div class="p-details">
+            <h2><a href="#metalcat">Metal</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/pizza_box.jpg" alt="Pizza Box" />
+          <div class="p-details">
+            <h2><a href="#pizzacat">Pizza Box</a></h2>
+            <h3>Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/food_waste.jpeg" alt="Food Waste" />
+          <div class="p-details">
+            <h2><a href="#foodcat">Food Waste</a></h2>
+            <h3 class="compost">Compost Only</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/cooking_oil.jpg" alt="Cooking Oil" />
+          <div class="p-details">
+            <h2><a href="#cookingoilcat">Cooking Oil</a></h2>
+            <h3 class="centers">Recycling Centers Only</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/bubblewrap.jpg" alt="Bubble Wrap" />
+          <div class="p-details">
+            <h2><a href="#bubblewrap">Bubble Wrap</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/christ_lights.jpg" alt="Christmas" />
+          <div class="p-details">
+            <h2><a href="#christlightscat">Christmas Lights</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/hanger.jpg" alt="Hanger" />
+          <div class="p-details">
+            <h2><a href="#coathangerscat">Coat Hanger</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/diapers.jpg" alt="Diapers" />
+          <div class="p-details">
+            <h2><a href="#diaperscat">Diapers</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/plasticbag.jpg" alt="Plastic Bag" />
+          <div class="p-details">
+            <h2><a href="#plasticbagcat">Plastic Bag</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/styrofoam.jpg" alt="Styrofoam" />
+          <div class="p-details">
+            <h2><a href="#styrofoamcat">Styrofoam</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/sportsequip.jpg" alt="Sport Equipment" />
+          <div class="p-details">
+            <h2><a href="#sportsequipcat">Sports Equipment</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/stuffed_animals.jpg" alt="Stuffed Animals" />
+          <div class="p-details">
+            <h2><a href="#stuffedanimalscat">Stuffed Animals</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/plasticwrap.jpg" alt="Plastic Wrap" />
+          <div class="p-details">
+            <h2><a href="#plasticwrapcat">Plastic Wrap</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/hose.jpg" alt="Hose" />
+          <div class="p-details">
+            <h2><a href="#gardenhosecat">Garden Hose</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/syringe.jpg" alt="Syringe" />
+          <div class="p-details">
+            <h2><a href="#syringecat">Syringe</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/wood.jpg" alt="Wood" />
+          <div class="p-details">
+            <h2><a href="#woodcat">Wood</a></h2>
+            <h3 class="centers">Recycling Center Only</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/yardwaste.jpg" alt="Yard Waste" />
+          <div class="p-details">
+            <h2><a href="#yardwastecat">Yard Waste</a></h2>
+            <h3 class="non-rec">Not Recyclable</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/battery.jpg" alt="Battery" />
+          <div class="p-details">
+            <h2><a href="#batterycat">Batteries</a></h2>
+            <h3 class="hhw">HHW</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/pesticide.jpg" alt="Pesticide" />
+          <div class="p-details">
+            <h2><a href="#Pesticide">Pesticide</a></h2>
+            <h3 class="hhw">HHW</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/paint.jpg" alt="Paint" />
+          <div class="p-details">
+            <h2><a href="#paint">Paint</a></h2>
+            <h3 class="hhw">HHW</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/motor.jpg" alt="Motor Oil" />
+          <div class="p-details">
+            <h2><a href="#motoroilcat">Motor Oil</a></h2>
+            <h3 class="hhw">HHW</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Catalog will explain what it is, how it gets recycled, environmental , and where it can be recycled-->
+    <div class="container catalog">
+      <div id="papercat">
+        <h3>Paper</h3>
+        <p>
+          Paper recycling is the process of converting used paper products into
+          new paper products. The used paper is collected, sorted, and cleaned
+          to remove any contaminants like ink or staples. The cleaned paper is
+          then chopped up into small pieces and mixed with water to create a
+          pulp. This pulp is then processed and turned into new paper products
+          like newspaper, cardboard, and tissue paper. If paper wasn't recycled,
+          it would end up in landfills where it takes a long time to decompose
+          and can contribute to environmental problems like deforestation and
+          greenhouse gas emissions. Paper recycling can take place in many
+          locations, including curbside pickup programs, drop-off centers, and
+          recycling facilities.
+        </p>
+      </div>
+      <div id="newspaper">
+        <h3>Newspaper</h3>
+        <p>
+          Newspaper recycling is the process of collecting and reprocessing used
+          newspapers to create new paper products. The recycling process
+          typically involves shredding the newspapers into small pieces, which
+          are then mixed with water to create a pulp. The pulp is then cleaned
+          and screened to remove any impurities and contaminants, such as ink or
+          staples. The resulting clean pulp can be used to create new newspaper,
+          as well as other paper products such as tissue paper, cardboard, and
+          insulation. Recycling newspapers helps to conserve natural resources,
+          reduce the amount of waste going to landfills, and reduce energy
+          consumption and greenhouse gas emissions associated with paper
+          production. Newspapers can be recycled through curbside pickup
+          programs, drop-off centers, and recycling facilities.
+        </p>
+      </div>
+
+      <div id="mailcat">
+        <h3>Paper Mail</h3>
+        <p>
+          Paper mail recycling involves collecting and reprocessing used paper
+          mail, such as letters, envelopes, and junk mail, to create new paper
+          products. The recycling process typically begins with sorting the mail
+          to remove any plastic or non-paper materials. The paper is then
+          shredded and mixed with water to create a pulp, which is cleaned and
+          screened to remove any contaminants. The resulting clean pulp can be
+          used to create new paper products, such as stationary, packaging, and
+          tissue paper. Recycling paper mail helps to reduce the amount of waste
+          going to landfills and conserve natural resources. It also helps to
+          reduce the energy consumption and greenhouse gas emissions associated
+          with paper production. Paper mail can be recycled through curbside
+          pickup programs, drop-off centers, and recycling facilities.
+        </p>
+      </div>
+
+      <div id="phonecat">
+        <h3>Phone Books</h3>
+        <p>
+          Phone book recycling involves collecting and reprocessing used phone
+          books to create new paper products. The recycling process typically
+          begins with removing any non-paper materials, such as plastic covers
+          or metal binding, from the phone books. The phone books are then
+          shredded and mixed with water to create a pulp, which is cleaned and
+          screened to remove any contaminants. The resulting clean pulp can be
+          used to create new paper products, such as tissue paper, cardboard,
+          and insulation. Recycling phone books helps to reduce the amount of
+          waste going to landfills and conserve natural resources. It also helps
+          to reduce the energy consumption and greenhouse gas emissions
+          associated with paper production. Phone books can be recycled through
+          curbside pickup programs, drop-off centers, and recycling facilities.
+          Many communities offer special collection programs or events
+          specifically for phone book recycling.
+        </p>
+      </div>
+
+      <div id="brochurecat">
+        <h3>Brochures</h3>
+        <p>
+          Brochure recycling involves collecting and reprocessing used brochures
+          to create new paper products. The recycling process typically begins
+          with sorting the brochures to remove any non-paper materials, such as
+          plastic or metal. The brochures are then shredded and mixed with water
+          to create a pulp, which is cleaned and screened to remove any
+          contaminants. The resulting clean pulp can be used to create new paper
+          products, such as stationery, packaging, and tissue paper. Recycling
+          brochures helps to reduce the amount of waste going to landfills and
+          conserve natural resources. It also helps to reduce the energy
+          consumption and greenhouse gas emissions associated with paper
+          production. Brochures can be recycled through curbside pickup
+          programs, drop-off centers, and recycling facilities. If the brochure
+          has glossy or coated paper, it may require special processing to
+          remove the coatings before it can be recycled.
+        </p>
+      </div>
+
+      <div id="magazinecat">
+        <h3>Magazines</h3>
+        <p>
+          Magazine recycling involves collecting and reprocessing used magazines
+          to create new paper products. The recycling process typically begins
+          with removing any non-paper materials, such as staples or inserts,
+          from the magazines. The magazines are then shredded and mixed with
+          water to create a pulp, which is cleaned and screened to remove any
+          contaminants. The resulting clean pulp can be used to create new paper
+          products, such as newspaper, cardboard, and insulation. Recycling
+          magazines helps to reduce the amount of waste going to landfills and
+          conserve natural resources. It also helps to reduce the energy
+          consumption and greenhouse gas emissions associated with paper
+          production. Magazines can be recycled through curbside pickup
+          programs, drop-off centers, and recycling facilities. Some magazines
+          may have glossy or coated paper, which may require special processing
+          to remove the coatings before it can be recycled.
+        </p>
+      </div>
+
+      <div id="reamcat">
+        <h3>Ream Paper</h3>
+        <p>
+          Ream paper recycling involves collecting and reprocessing used ream
+          paper to create new paper products. Ream paper refers to high-quality,
+          white or colored paper that is often used for printing, copying, or
+          writing. The recycling process typically begins with sorting the paper
+          to remove any contaminants, such as staples or paper clips. The paper
+          is then shredded and mixed with water to create a pulp, which is
+          cleaned and screened to remove any impurities. The resulting clean
+          pulp can be used to create new paper products, such as stationery,
+          packaging, and tissue paper. Recycling ream paper helps to reduce the
+          amount of waste going to landfills and conserve natural resources. It
+          also helps to reduce the energy consumption and greenhouse gas
+          emissions associated with paper production. Ream paper can be recycled
+          through curbside pickup programs, drop-off centers, and recycling
+          facilities. Some recycling facilities may require the paper to meet
+          certain quality standards, such as a minimum weight or color quality,
+          in order to be accepted for recycling.
+        </p>
+      </div>
+
+      <div id="filefoldercat">
+        <h3>File Folders</h3>
+        <p>
+          File folder recycling involves collecting and reprocessing used file
+          folders to create new paper products. File folders are typically made
+          of sturdy paper or cardstock and are used for organizing documents in
+          a filing system. The recycling process typically begins with sorting
+          the file folders to remove any non-paper materials, such as metal
+          fasteners or plastic labels. The file folders are then shredded and
+          mixed with water to create a pulp, which is cleaned and screened to
+          remove any contaminants. The resulting clean pulp can be used to
+          create new paper products, such as cardboard, tissue paper, and
+          insulation. Recycling file folders helps to reduce the amount of waste
+          going to landfills and conserve natural resources. It also helps to
+          reduce the energy consumption and greenhouse gas emissions associated
+          with paper production. File folders can be recycled through curbside
+          pickup programs, drop-off centers, and recycling facilities. Some
+          recycling facilities may require the file folders to be flattened
+          before they can be accepted for recycling.
+        </p>
+      </div>
+
+      <div id="posterboardcat">
+        <h3>Poster Board</h3>
+        <p>
+          Poster board recycling involves collecting and reprocessing used
+          poster boards to create new paper products. Poster boards are usually
+          made of a thicker and sturdier type of paper or cardboard and are
+          commonly used for presentations, displays, or signs. The recycling
+          process typically begins with removing any non-paper materials, such
+          as tape or staples, from the poster board. The poster board is then
+          shredded and mixed with water to create a pulp, which is cleaned and
+          screened to remove any impurities. The resulting clean pulp can be
+          used to create new paper products, such as cardboard, tissue paper,
+          and insulation. Recycling poster boards helps to reduce the amount of
+          waste going to landfills and conserve natural resources. It also helps
+          to reduce the energy consumption and greenhouse gas emissions
+          associated with paper production. Poster boards can be recycled
+          through curbside pickup programs, drop-off centers, and recycling
+          facilities. Some recycling facilities may require the poster boards to
+          be cut into smaller pieces before they can be accepted for recycling.
+        </p>
+      </div>
+
+      <div id="cardboardcat">
+        <h3>Cardboard</h3>
+        <p>
+          Cardboard recycling involves collecting and reprocessing used
+          cardboard boxes and other types of cardboard materials to create new
+          products. Cardboard is a type of paperboard that is commonly used for
+          packaging, shipping, and storing goods. The recycling process
+          typically involves sorting the cardboard to remove any contaminants,
+          such as tape or staples, and then shredding the cardboard into small
+          pieces. The shredded cardboard is mixed with water to create a pulp,
+          which is cleaned and screened to remove any impurities. The resulting
+          clean pulp can be used to create new cardboard boxes and other paper
+          products, such as paperboard, paper towels, and tissue paper.
+          Recycling cardboard helps to reduce the amount of waste going to
+          landfills and conserve natural resources. It also helps to reduce the
+          energy consumption and greenhouse gas emissions associated with the
+          production of new cardboard materials. Cardboard can be recycled
+          through curbside pickup programs, drop-off centers, and recycling
+          facilities. Many recycling facilities also offer pick-up services for
+          large quantities of cardboard from businesses and other organizations.
+        </p>
+      </div>
+
+      <div id="milkcartoncat">
+        <h3>Milk Cartons</h3>
+        <p>
+          Milk carton recycling involves collecting and reprocessing used milk
+          cartons to create new products. Milk cartons are made from a
+          combination of paper, plastic, and aluminum layers, which are tightly
+          bonded together to create a durable and waterproof packaging material.
+          The recycling process typically involves separating the different
+          layers of the milk carton using a pulping process. The paper and
+          plastic layers are then further processed to remove any impurities,
+          such as adhesives or coatings, and turned into a pulp. The resulting
+          pulp can be used to create new paper products, such as tissue paper,
+          paper towels, and writing paper. The aluminum layer is also separated
+          and recycled separately to create new aluminum products, such as
+          aluminum cans. Recycling milk cartons helps to reduce the amount of
+          waste going to landfills and conserve natural resources. It also helps
+          to reduce the energy consumption and greenhouse gas emissions
+          associated with the production of new packaging materials. Milk
+          cartons can be recycled through curbside pickup programs, drop-off
+          centers, and recycling facilities.
+        </p>
+      </div>
+
+      <div id="milkjugcat">
+        <h3>Milk Jugs</h3>
+        <p>
+          Milk jug recycling involves collecting and reprocessing used milk jugs
+          to create new products. Milk jugs are typically made from high-density
+          polyethylene (HDPE), which is a durable and lightweight plastic
+          material. The recycling process typically involves shredding the milk
+          jugs into small pieces and then melting the pieces down to create new
+          HDPE pellets. These pellets can then be used to create a variety of
+          new plastic products, such as containers, bottles, and toys. Recycling
+          milk jugs helps to reduce the amount of plastic waste going to
+          landfills and conserve natural resources. It also helps to reduce the
+          energy consumption and greenhouse gas emissions associated with the
+          production of new plastic materials. Milk jugs can be recycled through
+          curbside pickup programs, drop-off centers, and recycling facilities.
+          Some recycling programs may require that the milk jugs be rinsed out
+          and have the caps removed before they can be recycled.
+        </p>
+      </div>
+
+      <div id="plasticbottlecat">
+        <h3>Plastic Bottles</h3>
+        <p>
+          Plastic bottle recycling involves collecting and reprocessing used
+          plastic bottles to create new products. Plastic bottles are typically
+          made from a type of plastic called polyethylene terephthalate (PET),
+          which is a durable and lightweight material commonly used for beverage
+          and personal care product packaging. The recycling process typically
+          involves collecting the plastic bottles and sorting them by type,
+          color, and shape. The bottles are then shredded into small pieces and
+          washed to remove any contaminants, such as labels and adhesives. The
+          plastic pieces are then melted down and formed into pellets, which can
+          be used to create a variety of new plastic products, such as new
+          plastic bottles, containers, and clothing. Recycling plastic bottles
+          helps to reduce the amount of plastic waste going to landfills and
+          conserve natural resources. It also helps to reduce the energy
+          consumption and greenhouse gas emissions associated with the
+          production of new plastic materials. Plastic bottles can be recycled
+          through curbside pickup programs, drop-off centers, and recycling
+          facilities. Some recycling programs may require that the plastic
+          bottles be rinsed out and have the caps removed before they can be
+          recycled.
+        </p>
+      </div>
+
+      <div id="sodabottles">
+        <h3>Plastic Soda Bottles</h3>
+        <p>
+          Plastic soda bottle recycling involves collecting and reprocessing
+          used plastic soda bottles to create new products. Soda bottles are
+          typically made from a type of plastic called polyethylene
+          terephthalate (PET), which is a durable and lightweight material
+          commonly used for beverage packaging. The recycling process is similar
+          to that of plastic bottle recycling, where the plastic bottles are
+          collected, sorted, and shredded into small pieces. The plastic pieces
+          are then washed to remove any contaminants, such as labels and
+          adhesives. The plastic is then melted down and formed into pellets,
+          which can be used to create a variety of new plastic products, such as
+          new plastic bottles, containers, and clothing. Recycling plastic soda
+          bottles helps to reduce the amount of plastic waste going to landfills
+          and conserve natural resources. It also helps to reduce the energy
+          consumption and greenhouse gas emissions associated with the
+          production of new plastic materials. Plastic soda bottles can be
+          recycled through curbside pickup programs, drop-off centers, and
+          recycling facilities. It is important to note that soda bottles should
+          be empty and rinsed out before they are recycled.
+        </p>
+      </div>
+
+      <div id="shampoocat">
+        <h3>Plastic Shampoo Bottles</h3>
+        <p>
+          Plastic shampoo bottle recycling involves collecting and reprocessing
+          used plastic shampoo bottles to create new products. Shampoo bottles
+          are typically made from a type of plastic called high-density
+          polyethylene (HDPE), which is a durable and lightweight material
+          commonly used for personal care product packaging. The recycling
+          process is similar to that of plastic bottle recycling, where the
+          plastic bottles are collected, sorted, and shredded into small pieces.
+          The plastic pieces are then washed to remove any contaminants, such as
+          labels and adhesives. The plastic is then melted down and formed into
+          pellets, which can be used to create a variety of new plastic
+          products, such as new plastic bottles, containers, and furniture.
+          Recycling plastic shampoo bottles helps to reduce the amount of
+          plastic waste going to landfills and conserve natural resources. It
+          also helps to reduce the energy consumption and greenhouse gas
+          emissions associated with the production of new plastic materials.
+          Plastic shampoo bottles can be recycled through curbside pickup
+          programs, drop-off centers, and recycling facilities. It is important
+          to note that shampoo bottles should be empty and rinsed out before
+          they are recycled.
+        </p>
+      </div>
+
+      <div id="soapdiscat">
+        <h3>Plastic Soap Dispensers</h3>
+        <p>
+          Plastic soap dispenser recycling involves collecting and reprocessing
+          used plastic soap dispensers to create new products. Soap dispensers
+          are typically made from a variety of plastic materials, including
+          high-density polyethylene (HDPE), polypropylene (PP), and polystyrene
+          (PS). The recycling process involves collecting the plastic soap
+          dispensers and sorting them by type of plastic. The dispensers are
+          then shredded into small pieces and washed to remove any contaminants,
+          such as soap residue and labels. The plastic is then melted down and
+          formed into pellets, which can be used to create a variety of new
+          plastic products, such as new soap dispensers, containers, and
+          building materials. Recycling plastic soap dispensers helps to reduce
+          the amount of plastic waste going to landfills and conserve natural
+          resources. It also helps to reduce the energy consumption and
+          greenhouse gas emissions associated with the production of new plastic
+          materials. Plastic soap dispensers can be recycled through curbside
+          pickup programs, drop-off centers, and recycling facilities. It is
+          important to note that the soap dispensers should be empty and rinsed
+          out before they are recycled.
+        </p>
+      </div>
+
+      <div id="detergentcat">
+        <h3>Plastic Detergent Containers</h3>
+        <p>
+          Plastic detergent bottle recycling involves collecting and
+          reprocessing used plastic detergent bottles to create new products.
+          Detergent bottles are typically made from a type of plastic called
+          high-density polyethylene (HDPE), which is a durable and lightweight
+          material commonly used for cleaning product packaging. The recycling
+          process is similar to that of plastic bottle recycling, where the
+          plastic bottles are collected, sorted, and shredded into small pieces.
+          The plastic pieces are then washed to remove any contaminants, such as
+          labels and adhesives. The plastic is then melted down and formed into
+          pellets, which can be used to create a variety of new plastic
+          products, such as new plastic bottles, containers, and toys. Recycling
+          plastic detergent bottles helps to reduce the amount of plastic waste
+          going to landfills and conserve natural resources. It also helps to
+          reduce the energy consumption and greenhouse gas emissions associated
+          with the production of new plastic materials. Plastic detergent
+          bottles can be recycled through curbside pickup programs, drop-off
+          centers, and recycling facilities. It is important to note that
+          detergent bottles should be empty and rinsed out before they are
+          recycled.
+        </p>
+      </div>
+
+      <div id="aluminumcancat">
+        <h3>Aluminum Beverage Cans</h3>
+        <p>
+          Aluminum beverage can recycling involves collecting and reprocessing
+          used aluminum cans to create new products. Aluminum cans are a popular
+          type of packaging for carbonated beverages and other drinks due to
+          their durability and light weight. The recycling process involves
+          collecting the aluminum cans and sorting them by type of metal. The
+          cans are then shredded into small pieces and melted down to form
+          aluminum ingots. These ingots can be used to create a variety of new
+          aluminum products, such as new cans, car parts, and building
+          materials. Recycling aluminum beverage cans helps to conserve natural
+          resources and reduce the environmental impact of manufacturing new
+          aluminum products. It also helps to reduce the energy consumption and
+          greenhouse gas emissions associated with the production of new
+          aluminum materials. Aluminum cans can be recycled through curbside
+          pickup programs, drop-off centers, and recycling facilities. It is
+          important to note that aluminum cans should be empty and rinsed out
+          before they are recycled.
+        </p>
+      </div>
+
+      <div id="aluminumfoodcancat">
+        <h3>Almuminum Cans</h3>
+        <p>
+          Aluminum can recycling involves collecting and reprocessing used
+          aluminum cans to create new products. Aluminum cans are a popular type
+          of packaging for beverages and other products due to their durability,
+          light weight, and ability to retain the flavor and quality of the
+          contents. The recycling process involves collecting the aluminum cans
+          and sorting them by type of metal. The cans are then shredded into
+          small pieces and melted down to form aluminum ingots. These ingots can
+          be used to create a variety of new aluminum products, such as new
+          cans, car parts, and building materials. Recycling aluminum cans helps
+          to conserve natural resources and reduce the environmental impact of
+          manufacturing new aluminum products. It also helps to reduce the
+          energy consumption and greenhouse gas emissions associated with the
+          production of new aluminum materials. Aluminum cans can be recycled
+          through curbside pickup programs, drop-off centers, and recycling
+          facilities. It is important to note that aluminum cans should be empty
+          and rinsed out before they are recycled.
+        </p>
+      </div>
+
+      <div id="metalcat">
+        <h3>Scrap Metal</h3>
+        <p>
+          Scrap metal recycling involves the collection and processing of metal
+          waste materials from various sources, including industries,
+          construction sites, and households. The most commonly recycled metals
+          include steel, iron, aluminum, copper, and brass. The recycling
+          process begins with the collection and transportation of the scrap
+          metal to a recycling facility. The metal is then sorted and processed
+          using various techniques, such as shredding, cutting, and melting.
+          After processing, the metal is turned into a form that can be used to
+          manufacture new products. Recycling scrap metal helps to conserve
+          natural resources, reduce energy consumption, and decrease greenhouse
+          gas emissions associated with mining and processing new metals. It
+          also helps to reduce the amount of metal waste going to landfills,
+          which can take hundreds of years to decompose. Scrap metal can be
+          recycled through curbside pickup programs, drop-off centers, and
+          recycling facilities. Many recycling facilities offer cash payments to
+          individuals and businesses for their scrap metal, providing an
+          economic incentive for recycling.
+        </p>
+      </div>
+
+      <div id="pizzacat">
+        <h3>Pizza Boxes</h3>
+        <p>
+          Pizza box recycling can be a bit more complex than other types of
+          paper recycling. This is because pizza boxes are often contaminated
+          with grease, cheese, and other food residue, which can make them more
+          difficult to recycle. If the pizza box is clean and free from any food
+          residue or oil stains, it can be recycled along with other cardboard
+          materials. However, if the box is greasy or has food residue, it
+          should not be included in the recycling bin. The grease and food
+          residue can contaminate the other cardboard materials in the recycling
+          bin, making them unusable for recycling. In some areas, there are
+          specialized recycling programs that accept pizza boxes, even if they
+          are contaminated with grease or food residue. These programs typically
+          use a special process to remove the grease and food residue before the
+          boxes are recycled. If there are no specialized recycling programs in
+          your area, the best option may be to compost the pizza boxes instead
+          of recycling them. This can help to reduce waste going to landfills
+          and provide a natural source of fertilizer for plants.
+        </p>
+      </div>
+
+      <div id="foodcat">
+        <h3>Food Waste</h3>
+        <p>
+          Food waste composting is the process of transforming food scraps and
+          other organic waste materials into nutrient-rich soil. Composting
+          involves creating a mixture of organic waste, such as food scraps,
+          yard waste, and paper products, and allowing it to decompose over
+          time. The decomposition process is carried out by microorganisms, such
+          as bacteria and fungi, which break down the organic matter into a rich
+          soil-like material called compost. Composting food waste helps to
+          reduce the amount of waste going to landfills, which can take years to
+          decompose and produce harmful greenhouse gases. It also helps to
+          create a valuable resource for gardening and farming, as compost can
+          be used to enrich soil and improve plant growth. Food waste can be
+          composted at home using a compost bin or pile, or it can be taken to a
+          commercial composting facility. Commercial composting facilities use
+          large-scale composting methods to process large quantities of organic
+          waste materials, including food waste from restaurants, grocery
+          stores, and other sources. The resulting compost can then be sold to
+          farmers, landscapers, and home gardeners. Composting food waste is an
+          effective way to reduce waste, conserve resources, and support
+          sustainable agriculture.
+        </p>
+      </div>
+
+      <div id="cookingoilcat">
+        <h3>Cooking Oil</h3>
+        <p>
+          Cooking oil recycling involves the collection and processing of used
+          cooking oil from various sources, such as households, restaurants, and
+          food processing facilities. Used cooking oil is considered a waste
+          material and can be harmful to the environment if not disposed of
+          properly. Recycling used cooking oil helps to reduce waste going to
+          landfills, prevent clogged pipes and sewage systems, and provide a
+          valuable resource for the production of biodiesel fuel. After
+          collection, the used cooking oil is transported to a recycling
+          facility where it is processed and refined. The processing involves
+          removing impurities and separating the oil into different grades. The
+          refined cooking oil is then sold to biodiesel producers who use it as
+          a feedstock to produce renewable diesel fuel. In some areas, there are
+          drop-off locations or curbside pickup programs for used cooking oil
+          recycling. Recycling used cooking oil can also provide economic
+          benefits to individuals and businesses, as some recycling programs may
+          pay for the used oil.
+        </p>
+      </div>
+
+      <div id="bubblewrap">
+        <h3>Bubble Wrap</h3>
+        <p>
+          Bubble wrap is a type of plastic packaging material that is commonly
+          used to protect fragile items during shipping or storage. It is made
+          from polyethylene resin, which is a type of plastic that can be
+          recycled. However, recycling bubble wrap can be a bit more challenging
+          than recycling other types of plastic materials. This is because the
+          air-filled bubbles can get in the way during the recycling process,
+          making it difficult to separate the plastic material from the air
+          pockets. If you have bubble wrap that is clean and free from any tape
+          or adhesive residue, it may be possible to recycle it with other
+          plastic materials. Some recycling programs accept bubble wrap, but it
+          is always best to check with your local recycling facility to see if
+          they accept this type of material. If there are no recycling options
+          available in your area, you may be able to reuse the bubble wrap or
+          donate it to a local shipping or packaging store. Alternatively, you
+          can also dispose of bubble wrap in the trash, but it is important to
+          make sure it is not left loose where it can become a hazard to
+          wildlife or the environment.
+        </p>
+      </div>
+
+      <div id="christlightscat">
+        <h3>Christmas Lights</h3>
+        <p>
+          Christmas lights are a popular holiday decoration that add a festive
+          touch to homes and businesses during the holiday season. However, when
+          these lights stop working or are no longer needed, they can become a
+          source of waste. Recycling Christmas lights can help to reduce waste
+          and conserve resources. Some recycling programs accept Christmas
+          lights for recycling, while others may not. If your local recycling
+          program does not accept Christmas lights, there are other options
+          available. Some hardware and home improvement stores may offer
+          recycling programs for Christmas lights. Alternatively, there are also
+          companies that specialize in recycling Christmas lights. These
+          companies will typically collect the lights and separate the various
+          components, such as the copper wiring and plastic bulbs, for
+          recycling. It is important to make sure that any Christmas lights
+          being recycled are free from any tape, clips, or other non-metallic
+          materials that may interfere with the recycling process. By recycling
+          Christmas lights, we can reduce waste and conserve resources, while
+          also ensuring that these decorations do not end up in landfills where
+          they can harm the environment.
+        </p>
+      </div>
+
+      <div id="coathangerscat">
+        <h3>Coat Hangers</h3>
+        <p>
+          Coat hangers are often made of metal, plastic, or a combination of
+          both, and can be recycled in some recycling programs. However, it is
+          important to check with your local recycling facility to see if they
+          accept coat hangers. If your local recycling program does not accept
+          coat hangers, you may be able to donate them to a thrift store or
+          second-hand shop that sells clothing. These stores may be able to
+          reuse the hangers, or they may have connections with other
+          organizations that can recycle them. Some dry cleaners also accept
+          coat hangers for reuse or recycling. It is important to make sure that
+          any coat hangers being donated for reuse are in good condition and
+          free from any rust, sharp edges, or other potential hazards. By
+          donating or recycling coat hangers, we can help to reduce waste and
+          conserve resources, while also supporting local businesses and
+          organizations.
+        </p>
+      </div>
+
+      <div id="diaperscat">
+        <h3>Diapers</h3>
+        <p>
+          Diapers are a type of single-use disposable product that can
+          contribute significantly to waste and pollution. While some disposable
+          diapers can be composted, most cannot be recycled due to their complex
+          materials and composition. However, some recycling programs may accept
+          certain types of diapers, such as those made from biodegradable
+          materials. It is important to check with your local recycling facility
+          to see if they accept diapers or any other types of compostable
+          materials. Alternatively, reusable cloth diapers are a more
+          sustainable option that can be washed and reused multiple times. By
+          using cloth diapers, we can reduce waste and conserve resources, while
+          also saving money in the long run. Some local diaper services may even
+          offer pick-up and delivery of soiled cloth diapers, making them a
+          convenient and eco-friendly option for busy families.
+        </p>
+      </div>
+
+      <div id="plasticbagcat">
+        <h3>Plastic Bags</h3>
+        <p>
+          Plastic bags are a common item in our daily lives, but they can also
+          be a significant source of waste and pollution. While some recycling
+          programs may accept plastic bags, many do not due to the low value and
+          difficulty in processing them. However, many grocery stores and
+          retailers have recycling programs for plastic bags and other types of
+          film plastic. These programs typically involve collecting the bags and
+          sending them to specialized recycling facilities that can turn them
+          into new products, such as composite decking, outdoor furniture, or
+          new plastic bags. It is important to make sure that any plastic bags
+          being recycled are clean and free from any other materials, such as
+          food residue or other debris. Alternatively, reusable cloth bags or
+          other durable alternatives to plastic bags can be used to reduce waste
+          and conserve resources. By recycling plastic bags or using reusable
+          bags, we can help to reduce waste and protect the environment.
+        </p>
+      </div>
+
+      <div id="styrofoamcat">
+        <h3>Styrofoam</h3>
+        <p>
+          Styrofoam, also known as expanded polystyrene (EPS), is a type of
+          plastic foam that is widely used in packaging and insulation. However,
+          it is not widely accepted for recycling due to its low value, large
+          volume, and difficulty in processing. Styrofoam is also not
+          biodegradable, which means it can persist in the environment for
+          hundreds of years, contributing to pollution and harming wildlife.
+          Some local recycling programs may accept certain types of styrofoam,
+          such as packing peanuts or blocks, but it is important to check with
+          your local recycling facility to see if they accept styrofoam and
+          which types are accepted. Alternatively, some retailers and shipping
+          companies may accept styrofoam for reuse or recycling, so it is worth
+          checking with them as well. It is important to try to avoid using
+          styrofoam whenever possible and look for alternative materials, such
+          as biodegradable or compostable packaging, to reduce waste and protect
+          the environment.
+        </p>
+      </div>
+
+      <div id="sportsequipcat">
+        <h3>Sports Equipment</h3>
+        <p>
+          Sports equipment can be made from a variety of materials, including
+          plastic, metal, and rubber, which can make recycling challenging.
+          However, there are some options available for recycling certain types
+          of sports equipment. Some local recycling programs may accept items
+          such as plastic water bottles, aluminum cans, and metal equipment,
+          like bikes or weight sets, while others may have specialized programs
+          for recycling items such as tennis balls or golf balls. Additionally,
+          many retailers offer recycling programs for certain types of sports
+          equipment, such as running shoes or yoga mats. It is important to
+          check with your local recycling facility or retailer to see what types
+          of sports equipment they accept and how to properly prepare the items
+          for recycling. Alternatively, donating gently used sports equipment to
+          local schools, community centers, or sports programs can be a great
+          way to extend the life of the items and support community
+          organizations.
+        </p>
+      </div>
+
+      <div id="stuffedanimalscat">
+        <h3>Stuffed Animals</h3>
+        <p>
+          tuffed animals can be difficult to recycle due to their complex
+          materials and often mixed composition. However, there are a few
+          options for keeping them out of the landfill. First, if the stuffed
+          animal is in good condition, it can be donated to charities, shelters,
+          or thrift stores. Some organizations also accept stuffed animals for
+          children in hospitals or other institutions. If the stuffed animal is
+          not in good condition or cannot be donated, some recycling facilities
+          may accept them, but it is important to check with the facility first
+          as they may have specific requirements. In some cases, the stuffing
+          material can be recycled or reused, while the fabric or outer covering
+          may be repurposed into other textile products. Alternatively, some
+          organizations and companies may offer a toy take-back program, where
+          they will collect used toys, including stuffed animals, for recycling
+          or repurposing. Overall, while it may be difficult to recycle stuffed
+          animals, there are several options for giving them a second life and
+          reducing waste.
+        </p>
+      </div>
+
+      <div id="plasticwrapcat">
+        <h3>Plastic Wrap</h3>
+        <p>
+          Plastic wrap, also known as cling wrap or stretch film, is a type of
+          thin, flexible plastic material commonly used to cover food or other
+          items for storage or transport. While plastic wrap is not typically
+          accepted for recycling in most curbside programs, there are some
+          options available for reducing waste. First, consider using
+          alternative materials, such as reusable containers or beeswax wraps,
+          which are washable and can be used over and over again. If plastic
+          wrap is necessary, try to reuse it as much as possible before
+          disposing of it. Some plastic wrap brands may also have a mail-in
+          recycling program, where they collect used plastic wrap for recycling
+          into new products. Additionally, some grocery stores or other
+          retailers may accept clean and dry plastic wrap for recycling, so it
+          is worth checking with them to see if they have a program in place.
+          Overall, while recycling options for plastic wrap may be limited,
+          there are still ways to reduce waste and minimize the environmental
+          impact of this common household item.
+        </p>
+      </div>
+
+      <div id="gardenhosecat">
+        <h3>Garden Hoses</h3>
+        <p>
+          Garden hoses are typically made of a combination of materials
+          including rubber, vinyl, or plastic, and metal fittings. While garden
+          hoses are not commonly accepted for recycling through curbside
+          programs, there are some options available for disposal. First,
+          consider repairing or repurposing the hose instead of throwing it
+          away. If the hose is damaged, it may be possible to cut off the
+          damaged section and reattach the fittings, or use the remaining length
+          for other purposes such as tying up plants or creating a soaker hose.
+          If the hose is beyond repair, some recycling facilities may accept it,
+          particularly if it is made of recyclable materials such as rubber or
+          plastic. Additionally, some municipalities or waste disposal sites may
+          have special collections or events for bulkier items such as garden
+          hoses, so it is worth checking with local resources. Overall, while
+          garden hoses may not be easy to recycle, there are still options
+          available for reducing waste and properly disposing of this item.
+        </p>
+      </div>
+
+      <div id="syringecat">
+        <h3>Syringes</h3>
+        <p>
+          Syringes, which are used for injecting medication, are considered
+          medical waste and must be disposed of properly to prevent injury and
+          the spread of disease. It is important not to recycle syringes in
+          curbside programs or mix them with regular household waste, as this
+          can be dangerous for workers who handle the waste. Instead, syringes
+          should be placed in a puncture-resistant container, such as a plastic
+          bottle with a screw-on cap, and labeled as "sharps" or "biohazard"
+          waste. Many pharmacies, hospitals, or health clinics may also accept
+          used syringes for disposal or have special collection programs in
+          place. Some municipalities may also have designated drop-off locations
+          for medical waste. It is important to follow proper procedures for
+          handling and disposing of syringes to protect both yourself and
+          others.
+        </p>
+      </div>
+
+      <div id="woodcat">
+        <h3>Wood</h3>
+        <p>
+          Wood recycling involves the collection and processing of used wood
+          products to create new items. Wood is a natural and renewable resource
+          that can be reused multiple times. The recycling process usually
+          involves sorting, cleaning, and shredding the used wood, then
+          transforming it into new products such as particleboard, mulch, and
+          fuel pellets. Recycling wood helps to reduce the amount of waste going
+          to landfills and preserves natural resources. It also helps to
+          decrease the energy consumption and carbon footprint associated with
+          producing new wood materials. Wood products can be recycled through
+          curbside pickup programs, drop-off centers, and recycling facilities.
+          Some programs may require that the wood is untreated and free of
+          contaminants before it can be recycled.
+        </p>
+      </div>
+
+      <div id="yardwastecat">
+        <h3>Yard Waste</h3>
+        <p>
+          Yard waste recycling involves the collection and processing of organic
+          materials from residential and commercial landscapes. This includes
+          grass clippings, leaves, branches, and other plant debris. The
+          recycling process typically involves shredding and composting the yard
+          waste, which transforms it into a nutrient-rich soil amendment. The
+          resulting compost can then be used to enrich soil for gardening and
+          landscaping purposes. Recycling yard waste helps to reduce the amount
+          of organic waste going to landfills and conserves natural resources.
+          It also helps to decrease the greenhouse gas emissions associated with
+          the decomposition of organic waste in landfills. Yard waste can be
+          recycled through curbside pickup programs, drop-off centers, and
+          composting facilities. Some programs may require that the yard waste
+          is free of contaminants, such as plastic and metal, before it can be
+          recycled.
+        </p>
+      </div>
+
+      <div id="batterycat">
+        <h3>Batteries</h3>
+        <p>
+          Batteries are portable energy storage devices that are used to power a
+          wide range of electronic devices, from small toys to large vehicles.
+          Most batteries are made up of one or more electrochemical cells, which
+          convert stored chemical energy into electrical energy. When a battery
+          is used up, it can be recycled to recover some of the valuable metals
+          and chemicals it contains, such as lead, cadmium, nickel, and lithium.
+          The recycling process typically involves sorting the batteries by
+          chemistry, crushing and shredding them, and then smelting the
+          recovered materials to produce new batteries or other products.
+          Recycling batteries helps to reduce the amount of hazardous waste
+          going to landfills, conserves natural resources, and decreases the
+          environmental impacts associated with mining and producing new
+          materials. Batteries can be recycled through specialized recycling
+          programs, drop-off locations, or curbside pickup programs in some
+          areas.
+        </p>
+      </div>
+
+      <div id="Pesticide">
+        <h3>Pesticides</h3>
+        <p>
+          In general, pesticides cannot be recycled due to the potential risks
+          they pose to human health and the environment. Pesticides are chemical
+          substances that are designed to be toxic to pests, and as such, they
+          must be handled and disposed of carefully. Pesticides can be hazardous
+          to human health if they are not handled properly, and they can also
+          contaminate soil, water, and air if they are not disposed of
+          correctly. Due to these risks, it is recommended that unused or
+          expired pesticides be disposed of through specialized programs and
+          facilities that are equipped to handle these materials safely. These
+          programs may include collection events or drop-off locations where
+          pesticides can be safely disposed of or incinerated. It is important
+          to always follow recommended guidelines and regulations for the safe
+          handling and disposal of pesticides to protect public health and the
+          environment.
+        </p>
+      </div>
+
+      <div id="paint">
+        <h3>Paint</h3>
+        <p>
+          Paint recycling involves collecting and reprocessing used paint to
+          create new products. Paint is typically composed of pigments, binders,
+          solvents, and additives, and can be hazardous if not disposed of
+          properly. The recycling process usually involves filtering and
+          refining the used paint to remove contaminants, then re-blending the
+          paint to create new products such as industrial coatings,
+          architectural paints, or traffic paints. Recycling paint helps to
+          reduce the amount of hazardous waste going to landfills and conserves
+          natural resources. It also helps to decrease the energy consumption
+          and carbon footprint associated with producing new paint materials.
+          Paint can be recycled through specialized recycling programs or
+          hazardous waste collection events. Proper paint disposal and recycling
+          help to protect the environment and public hea
+        </p>
+      </div>
+
+      <div id="motoroilcat">
+        <h3>Motor Oil</h3>
+        <p>
+          Motor oil is a lubricant used to reduce friction and wear in the
+          engine of a vehicle. Over time, motor oil becomes contaminated with
+          impurities such as dirt, metal particles, and other pollutants.
+          Disposing of used motor oil improperly can have harmful environmental
+          impacts, as motor oil can contaminate soil, groundwater, and surface
+          water. Fortunately, used motor oil can be recycled and re-refined into
+          new oil products. The recycling process involves removing the
+          impurities from the used oil, and then re-refining it into a base oil
+          that can be used to manufacture new motor oil, lubricants, or even
+          fuel. Recycling used motor oil helps to reduce the amount of waste
+          going to landfills and conserves natural resources. It also reduces
+          the energy consumption and greenhouse gas emissions associated with
+          producing new oil materials. Used motor oil can be recycled through
+          specialized programs or facilities, and some automotive retailers and
+          service stations may also accept used motor oil for recycling.
+        </p>
+      </div>
+    </div>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <!--Logo and title on the right-->
+          <section id="logo" class="col-sm-4">
+            <img src="images/recycling_logo_150x150.png" alt="Logo" /><br />
+            <h2>Go Green Philly</h2>
+            <hr class="visible-xs" />
+          </section>
+          <!--Gives the links to each page one under the other-->
+          <section id="site-map" class="col-sm-4">
+            <span>Site Map:</span><br />
+            <a href="index.html">Home</a><br />
+            <a href="recycling.html">Recyclables</a><br />
+            <a href="ideas.html">Ideas</a><br />
+            <a href="locations.html">Locations</a><br />
+            <a href="about.html">Why Recycle</a><br />
+            <hr class="visible-xs" />
+          </section>
+          <!--My email and source code on Github-->
+          <section id="contact" class="col-sm-4">
+            <span>Contact Information:</span><br />
+            <a href="https://github.com/roshik142234/Go-Green-Philly"
+              >Source Code</a
+            ><br />
+            <a href="mailto:roshik.patibandla@gmail.com">Email</a>
+          </section>
+        </div>
+        <!--Credit-->
+        <h2 id="credit">
+          <a
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='["Designed By: RoshikNagaSai", "Designed By: RoshikNagaSai Patibandla" ]'
+          >
+            <span class="wrap"></span>
+          </a>
+        </h2>
+      </div>
+    </footer>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/typewriter.js"></script>
+  </body>
+</html>

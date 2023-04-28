@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Go Green Philly</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/locations.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <!--Logo-->
+            <a href="index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img"></div>
+            </a>
+
+            <!--Makes title a href to homepage-->
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Go Green Philly</h1></a>
+            </div>
+
+            <!--Gives a buttoto only small devices such as phones a button to expand the navigation menu-->
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapsable-nav"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!--What the navbar will look like-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li class="list-inline-item">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span
+                  ><br class="hidden-xs" />
+                  Home</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="recycling.html">
+                  <span class="glyphicon glyphicon-refresh"></span
+                  ><br class="hidden-xs" />
+                  Recyclables</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="ideas.html">
+                  <span class="glyphicon glyphicon-comment"></span
+                  ><br class="hidden-xs" />
+                  Ideas</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="locations.html">
+                  <span class="glyphicon glyphicon-map-marker"></span
+                  ><br class="hidden-xs" />
+                  Locations</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="about.html">
+                  <span class="glyphicon glyphicon-info-sign"></span
+                  ><br class="hidden-xs" />
+                  Why Recycle</a
+                >
+              </li>
+            </ul>
+            <!-- #nav-list -->
+          </div>
+          <!-- .collapse .navbar-collapse -->
+        </div>
+        <!-- .container -->
+      </nav>
+      <!-- #header-nav -->
+    </header>
+
+    <main>
+      <div class="container">
+        <!--Highlighted Location-->
+        <h2>Recycling Locations Near PA</h2>
+        <div class="col-md-8 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1562904.1678250588!2d-76.95785587889038!3d40.08551113506714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7bf937c6465%3A0xd8c13c06c40badf6!2sBurns%20%26%20Co.%20Waste%20Recycling%20Center%20of%20Philadelphia%2C%20PA!5e0!3m2!1sen!2sus!4v1679447194902!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12 maindescribe">
+          <p>
+            Richard S. Burns, which began as a one-person local cleanoutdiv
+            id="map-tile" operation in the 1960s, has now become the only
+            complete recycling and waste recovery facility in Delaware Valley.
+            Their extensive 13-acre compound is capable of processing more than
+            1,500 tons of waste and materials each day. Throughout their more
+            than four decades in the industry, Richard S. Burns has continued to
+            grow and innovate to meet the evolving needs of their customers.
+            They were pioneers of recycling and waste recovery long before the
+            advent of green technology, and have since developed new techniques
+            and products to cater to their expanding clientele.
+          </p>
+        </div>
+
+        <!--List locations in PA with adress asa  href-->
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.356967277122!2d-75.6768973!3d39.8438327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6f9144e8f3185%3A0x8fb2134e8cf403ce!2sKennett%20Recycling!5e0!3m2!1sen!2sus!4v1680050577694!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Kennett+Recycling/@39.7905451,-75.8207172,9.79z/data=!4m6!3m5!1s0x89c6f9144e8f3185:0x8fb2134e8cf403ce!8m2!3d39.8438327!4d-75.6768973!16s%2Fg%2F11j37qvj8n?hl=en"
+            target="_blank"
+            >565 Bayard Rd, Kennett Square, PA 19348</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.9024722119775!2d-75.374186!3d39.89881580000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6e92a9a34e179%3A0xf4058562251e913f!2sNether%20Providence%20Recycling%20Center!5e0!3m2!1sen!2sus!4v1680051506452!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Champion+Recycling+Inc/@39.9969426,-75.6966677,17z/data=!3m1!4b1!4m6!3m5!1s0x89c6f5ef65079773:0xd958473f45fcc6cd!8m2!3d39.9969426!4d-75.6966677!16s%2Fg%2F1td0n_1b?authuser=0&hl=en"
+            target="_blank"
+            >5 Brookhaven Rd, Wallingford, PA 19086</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.5150007170937!2d-75.69666769999999!3d39.996942600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6f5ef65079773%3A0xd958473f45fcc6cd!2sChampion%20Recycling%20Inc!5e0!3m2!1sen!2sus!4v1680051547834!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Redux+Recycling/@39.9090639,-75.330468,17z/data=!3m1!4b1!4m6!3m5!1s0x89c6c26549596d4d:0xe742ee0ac71fc56a!8m2!3d39.9090639!4d-75.330468!16s%2Fg%2F1thvtnhb?authuser=0&hl=en"
+            target="_blank"
+            >575 Trestle Pl, Downingtown, PA 19335</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.4446760833926!2d-75.330468!3d39.9090639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c26549596d4d%3A0xe742ee0ac71fc56a!2sRedux%20Recycling!5e0!3m2!1sen!2sus!4v1680051589088!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Redux+Recycling/@39.909064,-75.330468,16z/data=!4m6!3m5!1s0x89c6c26549596d4d:0xe742ee0ac71fc56a!8m2!3d39.9090639!4d-75.330468!16s%2Fg%2F1thvtnhb?hl=en"
+            target="_blank"
+            >1260 E Woodland Ave, Springfield, PA 19064</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.934756943544!2d-76.620136!3d39.898093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c886353101a4bb%3A0x91f75da71d82e96b!2sSilverback%20Recycling%20%26%20Disposal!5e0!3m2!1sen!2sus!4v1680051638456!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Silverback+Recycling+%26+Disposal/@39.897379,-76.6188844,15.22z/data=!4m6!3m5!1s0x89c886353101a4bb:0x91f75da71d82e96b!8m2!3d39.898093!4d-76.620136!16s%2Fg%2F11g9g2b4wf?hl=en"
+            target="_blank"
+            >800 W Maple St Suite 104, Red Lion, PA 17356</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.03646959739!2d-75.1917917!3d39.9405739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c667cc0eae8d%3A0x12a31fc4c1a8c16c!2sBlue%20Mountain%20Recycling!5e0!3m2!1sen!2sus!4v1680051687266!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Blue+Mountain+Recycling/@39.940574,-75.191792,16z/data=!4m6!3m5!1s0x89c6c667cc0eae8d:0x12a31fc4c1a8c16c!8m2!3d39.9405739!4d-75.1917917!16s%2Fg%2F1tfyfjh4?hl=en"
+            target="_blank"
+            >2904 Ellsworth St, Philadelphia, PA 19146</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.749337680122!2d-75.0533197!3d40.0140463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b5da74ea9dd3%3A0x616e73d772330b8a!2sUnited%20States%20Recycling%2C%20Inc.!5e0!3m2!1sen!2sus!4v1680051767698!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/United+States+Recycling,+Inc./@40.014046,-75.05332,16z/data=!4m6!3m5!1s0x89c6b5da74ea9dd3:0x616e73d772330b8a!8m2!3d40.0140463!4d-75.0533197!16s%2Fg%2F1tfm2dm9?hl=en"
+            target="_blank"
+            >6101 Tacony St, Philadelphia, PA 19135</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.7973965954634!2d-75.56895858466194!3d40.03530267941126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6f2dc6c0d08a5%3A0xf6737935d7a33994!2sRecycling%20Express%20Inc!5e0!3m2!1sen!2sus!4v1680051999917!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Recycling+Express+Inc/@40.035303,-75.56677,16z/data=!4m6!3m5!1s0x89c6f2dc6c0d08a5:0xf6737935d7a33994!8m2!3d40.0353027!4d-75.5667699!16s%2Fg%2F1v_vtw08?hl=en"
+            target="_blank"
+            >526 Lancaster Ave # 3, Frazer, PA 19355</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.6927346619264!2d-75.3450202!3d39.9035112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6e9d4c315f137%3A0x79e228562bddd9ad!2sSwarthmore%20Borough%20Recycling%20Center!5e0!3m2!1sen!2sus!4v1680052058624!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Swarthmore+Borough+Recycling+Center/@39.903511,-75.34502,16z/data=!4m6!3m5!1s0x89c6e9d4c315f137:0x79e228562bddd9ad!8m2!3d39.9035112!4d-75.3450202!16s%2Fg%2F11hbblxv0n?hl=en"
+            target="_blank"
+            >121 Dartmouth Ave, Swarthmore, PA 19081</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.314910672343!2d-75.29949138465402!3d40.29096627937989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6a1a9073bce3d%3A0x9999efc0e957927f!2sEmert%20Recycling!5e0!3m2!1sen!2sus!4v1680052131354!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Emert+Recycling/@40.290966,-75.297303,16z/data=!4m6!3m5!1s0x89c6a1a9073bce3d:0x9999efc0e957927f!8m2!3d40.2909663!4d-75.2973027!16s%2Fg%2F1w4f91ct?hl=en"
+            target="_blank"
+            >2700 Richmond Rd, Hatfield, PA 19440</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.845114269954!2d-76.1723932!3d40.168002099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6142b5caa0ad3%3A0x45401d9fa1e9096d!2sEphrata%20Recycling!5e0!3m2!1sen!2sus!4v1680052176286!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Ephrata+Recycling/@40.168002,-76.172393,16z/data=!4m6!3m5!1s0x89c6142b5caa0ad3:0x45401d9fa1e9096d!8m2!3d40.1680021!4d-76.1723932!16s%2Fg%2F1tf6srg1?hl=en"
+            target="_blank"
+            >339 E Fulton St, Ephrata, PA 17522</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.0442840981887!2d-75.1906285!3d39.94039909999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c667cc0c0a2f%3A0xc168b183806c6ca9!2sRecommunity%20Recycling!5e0!3m2!1sen!2sus!4v1680052206872!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Recommunity+Recycling/@39.940399,-75.190628,16z/data=!4m6!3m5!1s0x89c6c667cc0c0a2f:0xc168b183806c6ca9!8m2!3d39.9403991!4d-75.1906285!16s%2Fg%2F11bw6l2t8g?hl=en"
+            target="_blank"
+            >2904 Ellsworth St, Philadelphia, PA 19146</a
+          >
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 locations">
+          <div class="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.630598408959!2d-75.9541711!3d40.1059483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c669d0f44960bb%3A0xed453b0ac9e9eef5!2sBeartown%20Recycling%20LLC!5e0!3m2!1sen!2sus!4v1680052247952!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a
+            class="mapref"
+            href="https://www.google.com/maps/place/Beartown+Recycling+LLC/@40.0680084,-76.2499154,9.59z/data=!4m6!3m5!1s0x89c669d0f44960bb:0xed453b0ac9e9eef5!8m2!3d40.1059483!4d-75.9541711!16s%2Fg%2F1v9gwf0c?hl=en"
+            target="_blank"
+            >6943 Division Hwy, Narvon, PA 17555</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <!--Logo and title on the right-->
+          <section id="logo" class="col-sm-4">
+            <img src="images/recycling_logo_150x150.png" alt="Logo" /><br />
+            <h2>Go Green Philly</h2>
+            <hr class="visible-xs" />
+          </section>
+          <!--Gives the links to each page one under the other-->
+          <section id="site-map" class="col-sm-4">
+            <span>Site Map:</span><br />
+            <a href="index.html">Home</a><br />
+            <a href="recycling.html">Recyclables</a><br />
+            <a href="ideas.html">Ideas</a><br />
+            <a href="locations.html">Locations</a><br />
+            <a href="about.html">Why Recycle</a><br />
+            <hr class="visible-xs" />
+          </section>
+          <!--My email and source code on Github-->
+          <section id="contact" class="col-sm-4">
+            <span>Contact Information:</span><br />
+            <a href="https://github.com/roshik142234/Go-Green-Philly"
+              >Source Code</a
+            ><br />
+            <a href="mailto:roshik.patibandla@gmail.com">Email</a>
+          </section>
+        </div>
+        <!--Credit-->
+        <h2 id="credit">
+          <a
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='["Designed By: RoshikNagaSai", "Designed By: RoshikNagaSai Patibandla" ]'
+          >
+            <span class="wrap"></span>
+          </a>
+        </h2>
+      </div>
+    </footer>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/typewriter.js"></script>
+  </body>
+</html>
